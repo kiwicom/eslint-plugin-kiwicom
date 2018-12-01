@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/kiwicom/eslint-plugin-kiwicom.svg?style=svg)](https://circleci.com/gh/kiwicom/eslint-plugin-kiwicom)
 [![Coverage Status](https://coveralls.io/repos/github/kiwicom/eslint-plugin-kiwicom/badge.svg?branch=master)](https://coveralls.io/github/kiwicom/eslint-plugin-kiwicom?branch=master)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 # eslint-plugin-kiwicom
 
