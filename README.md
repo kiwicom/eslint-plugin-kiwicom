@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/kiwicom/eslint-plugin-kiwicom/badge.svg?branch=master)](https://coveralls.io/github/kiwicom/eslint-plugin-kiwicom?branch=master)
+
 # eslint-plugin-kiwicom
 
 eslint rules in use at kiwi.com
