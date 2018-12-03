@@ -9,7 +9,7 @@
     "kiwicom"
   ],
   "author": "RICHARD IVAN",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
@@ -33,7 +33,11 @@
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "jest": "^23.6.0",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "ramda": "^0.26.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "engines": {
     "node": ">=0.10.0"

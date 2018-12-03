@@ -1,24 +1,23 @@
-module.exports = function (wallaby) {
-    return {
-        files: [
-            'lib/**/*.js',
-            '!lib/**/__tests__/*.spec.js',
-            '!lib/**/*.spec.js'
-        ],
+module.exports = function(wallaby) {
+  return {
+    files: [
+      'lib/**/*.js',
+      '!lib/**/__tests__/*.spec.js',
+      '!lib/**/*.spec.js',
+      '!lib/index.js'
+    ],
 
-        tests: [
-            'lib/**/__tests__/*.spec.js'
-        ],
-        env: {
-            type: 'node',
-            runner: 'node'
-        },
+    tests: ['lib/**/__tests__/*.spec.js'],
+    env: {
+      type: 'node',
+      runner: 'node'
+    },
 
-        testFramework: 'jest',
-        // for node.js tests you need to set env property as well
-        // https://wallabyjs.com/docs/integration/node.html
-        compilers: {
-            '**/*.js': wallaby.compilers.babel()
-        }
-    };
-};
+    testFramework: 'jest',
+    // for node.js tests you need to set env property as well
+    // https://wallabyjs.com/docs/integration/node.html
+    compilers: {
+      '**/*.js': wallaby.compilers.babel()
+    }
+  }
+}
