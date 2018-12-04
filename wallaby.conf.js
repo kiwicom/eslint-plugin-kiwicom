@@ -1,13 +1,13 @@
 module.exports = function(wallaby) {
   return {
     files: [
-      'lib/**/*.js',
-      '!lib/**/__tests__/*.spec.js',
-      '!lib/**/*.spec.js',
-      '!lib/index.js'
+      'src/**/*.js',
+      '!src/**/__tests__/*.spec.js',
+      '!src/**/*.spec.js',
+      '!src/index.js'
     ],
 
-    tests: ['lib/**/__tests__/*.spec.js'],
+    tests: ['src/**/__tests__/*.spec.js'],
     env: {
       type: 'node',
       runner: 'node'

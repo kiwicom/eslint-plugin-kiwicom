@@ -6,10 +6,10 @@ module.exports = {
   context: __dirname,
   entry: [
     // 'webpack/hot/poll.js?300',
-    './lib/index.js'
+    './src/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'lib'),
     filename: 'index.js',
     // // [hash:6] with add a SHA based on file changes if the env is build
     // filename:
@@ -48,7 +48,7 @@ module.exports = {
       banner: 'require("source-map-support").install();',
       raw: true,
       entryOnly: false
-    }),
-    new webpack.HotModuleReplacementPlugin({ quiet: true })
+    })
+    // new webpack.HotModuleReplacementPlugin({ quiet: true })
   ]
 }

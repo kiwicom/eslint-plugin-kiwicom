@@ -17,8 +17,12 @@ export const orbitTextComponentName = {
           R.equals(importPath, '@kiwicom/orbit-components/lib/Text') &&
           !R.equals(importName, 'OrbitText')
         ) {
+          const tokens = context.getTokens(node)
+          tokens
+
           context.report({
             node,
+            loc: tokens.find(token => token.value === importName).loc,
             messageId: 'orbitText',
             data: {
               name: importName
