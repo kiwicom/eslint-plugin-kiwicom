@@ -1,6 +1,11 @@
 // in your rule
 import * as R from 'ramda'
 
+const getImportName = R.compose(
+  R.prop('value'),
+  R.nth(1)
+)
+
 export const orbitTextComponentName = {
   meta: {
     messages: {
@@ -10,19 +15,21 @@ export const orbitTextComponentName = {
   create: context => {
     return {
       ImportDeclaration(node) {
+        const tokens = context.getSourceCode().getTokens(node)
         const importPath = R.path(['source', 'value'], node)
-        const importName = R.path(['specifiers', 0, 'local', 'name'], node)
+
+        const importName = getImportName(tokens)
 
         if (
-          R.equals(importPath, '@kiwicom/orbit-components/lib/Text') &&
-          !R.equals(importName, 'OrbitText')
+          !R.equals(importName, 'OrbitText') &&
+          R.equals(importPath, '@kiwicom/orbit-components/lib/Text')
         ) {
-          const tokens = context.getTokens(node)
-          tokens
-
           context.report({
             node,
-            loc: tokens.find(token => token.value === importName).loc,
+            loc: R.compose(
+              R.prop('loc'),
+              R.find(R.propEq('value', importName))
+            )(tokens),
             messageId: 'orbitText',
             data: {
               name: importName
