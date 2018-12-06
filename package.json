@@ -13,7 +13,7 @@
     "kiwicom"
   ],
   "author": "RICHARD IVAN",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "semantic-release": "semantic-release"
