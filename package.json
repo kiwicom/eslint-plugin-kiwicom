@@ -1,7 +1,11 @@
 {
   "name": "eslint-plugin-kiwicom",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "eslint rules in use at kiwi.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiwicom/eslint-plugin-kiwicom.git"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -11,7 +15,8 @@
   "author": "RICHARD IVAN",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "semantic-release": "semantic-release"
   },
   "jest": {
     "transform": {
@@ -35,6 +40,7 @@
     "jest": "^23.6.0",
     "prettier": "^1.15.3",
     "ramda": "^0.26.1",
+    "semantic-release": "^15.12.4",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"

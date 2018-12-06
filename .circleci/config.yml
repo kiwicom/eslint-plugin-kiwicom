@@ -36,4 +36,7 @@ jobs:
       # run tests!
       - run: yarn test
 
+      # release on npm!
+      - run: npx semantic-release
+
 
