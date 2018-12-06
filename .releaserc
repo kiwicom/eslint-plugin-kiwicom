@@ -11,5 +11,6 @@
         "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
       }
     }], '@semantic-release/release-notes-generator', '@semantic-release/npm', '@semantic-release/github'
-  ]
+  ],
+  "preset": "angular"
 }
