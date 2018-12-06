@@ -1,4 +1,4 @@
-// text-component-name
+// text-component-name-push
 import * as R from 'ramda'
 
 const getImportName = R.compose(
