@@ -36,6 +36,9 @@ jobs:
       # run tests!
       - run: yarn test
 
+      # build package!
+      - run: yarn webpack --config webpack.prod.js
+
       # release on npm!
       - run: npx semantic-release
 
