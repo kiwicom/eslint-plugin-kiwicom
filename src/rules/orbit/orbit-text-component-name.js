@@ -1,4 +1,4 @@
-// release
+// text-component-name
 import * as R from 'ramda'
 
 const getImportName = R.compose(
