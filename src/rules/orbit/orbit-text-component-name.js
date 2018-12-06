@@ -1,4 +1,4 @@
-// in your rule
+// release
 import * as R from 'ramda'
 
 const getImportName = R.compose(
