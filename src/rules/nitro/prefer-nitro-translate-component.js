@@ -1,6 +1,7 @@
 import * as R from 'ramda'
 
-const NITRO_PATH = '@kiwicom/nitro/lib/components/Translate'
+// eslint-disable-next-line
+const NITRO_PATH = "@kiwicom/nitro/lib/components/Translate"
 
 const getImportName = R.path(['specifiers', '0', 'local', 'name'])
 const getImportSource = R.prop('source')
@@ -24,7 +25,7 @@ export const preferNitroTranslateComponent = {
             loc: source.loc,
             messageId: 'preferNitroTranslate',
             fix: fixer => {
-              fixer.replaceTextRange(sourceRange, NITRO_PATH)
+              fixer.replaceText(source, NITRO_PATH)
             }
           })
       }
