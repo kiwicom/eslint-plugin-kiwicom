@@ -1,5 +1,6 @@
 import * as R from 'ramda'
 
+// force commit
 const getElementName = R.path(['name', 'name'])
 const getComponentAttributes = R.path(['attributes'])
 
