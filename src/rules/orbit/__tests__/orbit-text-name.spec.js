@@ -1,13 +1,5 @@
-const RuleTester = require('eslint').RuleTester
-
+import { ruleTester } from '../../../common/ruleTester'
 import { orbitTextComponentName } from '../orbit-text-component-name'
-
-const ruleTester = new RuleTester({
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 2016
-  }
-})
 
 describe('Orbit', function() {
   ruleTester.run('orbit-text-component-name', orbitTextComponentName, {

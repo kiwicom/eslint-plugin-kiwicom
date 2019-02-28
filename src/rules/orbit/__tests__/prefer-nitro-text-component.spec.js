@@ -1,13 +1,5 @@
-const RuleTester = require('eslint').RuleTester
-
+import { ruleTester } from '../../../common/ruleTester'
 import { preferNitroTextComponent } from '../prefer-nitro-text-component'
-
-const ruleTester = new RuleTester({
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 2016
-  }
-})
 
 describe('Prefer nitro text', function() {
   ruleTester.run('prefer-nitro-text-component', preferNitroTextComponent, {
