@@ -22,7 +22,7 @@ export const preferNitroTranslateComponent = {
         if (R.equals(name, 'Translate') && !R.equals(NITRO_PATH, sourcePath))
           return context.report({
             loc: {
-              start: node.range[0],
+              start: sourceRange[0],
               end: sourceRange[1]
             },
             messageId: 'preferNitroTranslate',
