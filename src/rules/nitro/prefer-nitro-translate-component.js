@@ -25,7 +25,7 @@ export const preferNitroTranslateComponent = {
             loc: source.loc,
             messageId: 'preferNitroTranslate',
             fix: fixer => {
-              fixer.replaceText(source, NITRO_PATH)
+              fixer.replaceTextRange(sourceRange, NITRO_PATH)
             }
           })
       }
