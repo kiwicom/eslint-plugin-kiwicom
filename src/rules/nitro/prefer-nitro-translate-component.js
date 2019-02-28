@@ -21,10 +21,7 @@ export const preferNitroTranslateComponent = {
 
         if (R.equals(name, 'Translate') && !R.equals(NITRO_PATH, sourcePath))
           return context.report({
-            loc: {
-              start: node.loc.start,
-              end: source.loc.end
-            },
+            loc: source.loc,
             messageId: 'preferNitroTranslate',
             fix: fixer => {
               fixer.replaceTextRange(sourceRange, NITRO_PATH)
