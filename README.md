@@ -49,6 +49,16 @@ Then configure the rules you want to use under the rules section.
 
 * Fill in provided rules here
 
+## How to contribute
+
+* Clone repository
+* Install dependencies
+* Optionally use [Wallabyjs](https://wallabyjs.com/)
+* Create a pull request
+
+### How to release a new version - Conventional changelog
+This project is using Semantic Release for releasing to npm. We use [Angular conventional changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular) for commit mesages in it's commit analyzer plugin.
+
 
 
 
