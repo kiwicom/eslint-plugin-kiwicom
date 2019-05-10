@@ -47,7 +47,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-4* Fill in provided rules here
+https://github.com/kiwicom/eslint-plugin-kiwicom/blob/master/src/rules/index.js
 
 ## How to contribute
 
