@@ -18,7 +18,6 @@ import { noTkeyNitroTranslateComponent } from './nitro/no-tkey-nitro-translate-c
 import { nitroUseStringForNonDynamicTranslationKeys } from './nitro/nitro-use-string-for-non-dynamic-translation-keys'
 import { nitroTranslate } from './nitro/nitro-translate'
 import { preferNitroTranslateFunction } from './nitro/prefer-nitro-translate-function'
-import { getTranslateFunctionKey } from './nitro/get-translate-function-key'
 
 export const rules = {
   'orbit-text-component-name': orbitTextComponentName,
@@ -27,6 +26,5 @@ export const rules = {
   'no-tkey-nitro-translate-component': noTkeyNitroTranslateComponent,
   'nitro-use-string-for-non-dynamic-translation-keys': nitroUseStringForNonDynamicTranslationKeys,
   'nitro-translate': nitroTranslate,
-  'prefer-nitro-translate-function': preferNitroTranslateFunction,
-  'get-translate-function-key': getTranslateFunctionKey
+  'prefer-nitro-translate-function': preferNitroTranslateFunction
 }
