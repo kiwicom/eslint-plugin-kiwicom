@@ -4,7 +4,8 @@ module.exports = function(wallaby) {
       'src/**/*.js',
       '!src/**/__tests__/*.spec.js',
       '!src/**/*.spec.js',
-      '!src/index.js'
+      { pattern: '!src/index.js', instrument: false },
+      { pattern: '!src/rules/index.js', instrument: false }
     ],
 
     tests: ['src/**/__tests__/*.spec.js'],
