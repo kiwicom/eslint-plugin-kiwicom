@@ -52,8 +52,7 @@ https://github.com/kiwicom/eslint-plugin-kiwicom/blob/master/src/rules/index.js
 ## How to contribute
 
 * Clone repository
-* Install dependencies
-* Optionally use [Wallabyjs](https://wallabyjs.com/)
+* Install dependencies using `yarn install`
 * Create a pull request
 
 ## Tools
