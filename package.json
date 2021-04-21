@@ -16,7 +16,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "build": "webpack --config webpack.prod.js"
   },
   "jest": {
     "transform": {
@@ -24,11 +25,13 @@
     }
   },
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.1.0",
+    "ramda": "^0.27.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "@kiwicom/translations": "*",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/npm": "^5.1.1",
     "@semantic-release/release-notes-generator": "^7.1.4",
@@ -43,7 +46,6 @@
     "eslint-plugin-prettier": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.3",
-    "ramda": "^0.26.1",
     "semantic-release": "^15.12.4",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
@@ -86,5 +88,8 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "peerDependencies": {
+    "@kiwicom/translations": "*"
   }
 }
