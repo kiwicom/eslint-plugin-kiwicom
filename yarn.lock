@@ -583,6 +583,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@kiwicom/translations@*":
+  version "1.601.360"
+  resolved "https://registry.yarnpkg.com/@kiwicom/translations/-/translations-1.601.360.tgz#c200e5d9ea9d85c75d3a588bf4e097f9d6bc28c0"
+  integrity sha512-7CHYwNfqoaT9crPxsnPgf6cqxfvHQdPaOISd0TYLbXGOEQjvuYRCtt2FLs8M9sIpEnelAlBDZGjhtoROgbplZA==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -6535,10 +6540,10 @@ qw@~1.0.1:
   resolved "https://registry.yarnpkg.com/qw/-/qw-1.0.1.tgz#efbfdc740f9ad054304426acb183412cc8b996d4"
   integrity sha1-77/cdA+a0FQwRCassYNBLMi5ltQ=
 
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
+ramda@^0.27.1:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
+  integrity sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
 
 randomatic@^3.0.0:
   version "3.1.1"
