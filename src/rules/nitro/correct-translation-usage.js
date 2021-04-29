@@ -27,7 +27,10 @@ const getNewTranslations = context => {
     return {}
   }
 
-  return require(additionalTranslationsModule)
+  // webpack cannot handle parametric require of unknown modules
+  // that don't exist in build time
+  // see https://webpack-3.cdn.bcebos.com/api/module-variables/#__non_webpack_require__-webpack-specific-
+  return __non_webpack_require__(additionalTranslationsModule)
 }
 
 const getTranslations = context => {
