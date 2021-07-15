@@ -342,7 +342,7 @@ ruleTester.run('correct-translation-usage', correctTranslationUsage, {
 <input id={id} value={value} onChange={onChange} placeholder={translate(__("mmb.random.thing"))} />;
       `,
       errors: [
-        "'mmb.random.thing' is not found in translations. Make sure the key was uploaded to PhraseApp and the package @kiwicom/translations is up to date (more details: https://kiwi.wiki/consumer-product/guides/translations/). If the copy is not final yet, the key can be added into a NEW_TRANSLATIONS file that you need to create according to the documentation."
+        "'mmb.random.thing' is not found in translations.\n If the copy is not final yet, the key can be added into a NEW_TRANSLATIONS file that you need to create according to the documentation.\n Otherwise, make sure the key was uploaded to PhraseApp and the package @kiwicom/translations is up to date (more details: https://kiwi.wiki/consumer-product/guides/translations/)."
       ]
     },
     {
