@@ -295,7 +295,7 @@ export const correctTranslationUsage = {
         'The translation key needs to be a string literal.',
       tKeyMustBeWrapped: 'The translation key needs to be wrapped in __().',
       tKeyNotFoundInTranslations:
-        "'{{ tKey }}' is not found in translations. Make sure the key was uploaded to PhraseApp and the package @kiwicom/translations is up to date (more details: https://kiwi.wiki/consumer-product/guides/translations/). If the copy is not final yet, the key can be added into {{ additionalTranslationsModule }}.",
+        "'{{ tKey }}' is not found in translations.\n If the copy is not final yet, the key can be added into {{ additionalTranslationsModule }}.\n Otherwise, make sure the key was uploaded to PhraseApp and the package @kiwicom/translations is up to date (more details: https://kiwi.wiki/consumer-product/guides/translations/).",
       valuesKeyMustBeStringLiteral: 'This key needs to be a string literal.',
       valuesMustBeObject:
         'The "values" attribute needs to be an object literal or object expression.',
