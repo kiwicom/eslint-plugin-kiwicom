@@ -254,9 +254,15 @@ const validateValuesObject = (context, valuesObject) => {
 }
 
 const isTranslationComponent = node =>
-  ['Translate', 'TranslateRef', 'TranslateNode', 'Text', 'TextNode'].includes(
-    node.name.name
-  )
+  [
+    'Translate',
+    'TranslateRef',
+    'TranslateNode',
+    'Text',
+    'TextNode',
+    'LinkButton',
+    'LinkButtonLink'
+  ].includes(node.name.name)
 
 const getValuesObjectFromJSX = node => {
   const attribute = getJSXAttribute(node, 'values')
