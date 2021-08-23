@@ -4,7 +4,7 @@
 
 import * as R from 'ramda'
 
-const realTranslations = require('@kiwicom/translations/lib/en-GB.json')
+import realTranslations from '@kiwicom/translations/lib/en-GB.json'
 
 const parseOptions = context => {
   const { options } = context
