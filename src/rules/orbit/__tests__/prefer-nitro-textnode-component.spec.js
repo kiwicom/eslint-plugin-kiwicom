@@ -42,7 +42,6 @@ describe('Prefer nitro text', function() {
         ]
       }
     ],
-    output:
-      'Prefer TextNode imported from Nitro library import TextNode from "@kiwicom/nitro/lib/components/TextNode"'
+    output: `TranslateNode is wrapped in Orbit Text component. Prefer using Nitro's TextNode which does the same. import TextNode from "@kiwicom/nitro/lib/components/TextNode"`
   })
 })
