@@ -43,6 +43,6 @@ describe('Prefer nitro text', function() {
       }
     ],
     output:
-      'Prefer Text imported from Nitro library import Text from "@kiwicom/nitro/lib/components/Text"'
+      'Translate is wrapped in Orbit Text component. Prefer using Nitro\'s Text which does the same.import Text from "@kiwicom/nitro/lib/components/Text"'
   })
 })

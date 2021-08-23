@@ -7,7 +7,7 @@ const getElementName = R.path(['name', 'name'])
 export const preferNitroTextNodeComponent = {
   meta: {
     messages: {
-      preferNitroTextNode: `Prefer TextNode imported from Nitro library
+      preferNitroTextNode: `TranslateNode is wrapped in Orbit Text component. Prefer using Nitro's TextNode which does the same.
       
       import TextNode from "@kiwicom/nitro/lib/components/TextNode"'
       `
