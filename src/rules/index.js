@@ -19,10 +19,12 @@ import { nitroUseStringForNonDynamicTranslationKeys } from './nitro/nitro-use-st
 import { selectorNaming } from './frontend/selector-naming'
 import { preferNitroTranslateFunction } from './nitro/prefer-nitro-translate-function'
 import { correctTranslationUsage } from './nitro/correct-translation-usage'
+import { preferNitroTextNodeComponent } from './orbit/prefer-nitro-textnode-component'
 
 export const rules = {
   'orbit-text-component-name': orbitTextComponentName,
   'prefer-nitro-text-component': preferNitroTextComponent,
+  'prefer-nitro-textnode-component': preferNitroTextNodeComponent,
   'prefer-nitro-translate-component': preferNitroTranslateComponent,
   'no-tkey-nitro-translate-component': noTkeyNitroTranslateComponent,
   'nitro-use-string-for-non-dynamic-translation-keys': nitroUseStringForNonDynamicTranslationKeys,

@@ -1,5 +1,5 @@
 import { ruleTester } from '../../../common/ruleTester'
-const { rules } = require('../../index')
+import { rules } from '../../index'
 
 const correctTranslationUsage = rules['correct-translation-usage']
 
