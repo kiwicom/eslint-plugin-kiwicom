@@ -20,6 +20,7 @@ import { selectorNaming } from './frontend/selector-naming'
 import { preferNitroTranslateFunction } from './nitro/prefer-nitro-translate-function'
 import { correctTranslationUsage } from './nitro/correct-translation-usage'
 import { preferNitroTextNodeComponent } from './orbit/prefer-nitro-textnode-component'
+import { allowedTagNamesInTranslationComponents } from './nitro/allowed-tag-names-in-translation-components'
 
 export const rules = {
   'orbit-text-component-name': orbitTextComponentName,
@@ -30,5 +31,6 @@ export const rules = {
   'nitro-use-string-for-non-dynamic-translation-keys': nitroUseStringForNonDynamicTranslationKeys,
   'selector-naming': selectorNaming,
   'prefer-nitro-translate-function': preferNitroTranslateFunction,
+  'allowed-tag-names-in-translation-components': allowedTagNamesInTranslationComponents,
   'correct-translation-usage': correctTranslationUsage
 }
