@@ -21,12 +21,14 @@ import { preferNitroTranslateFunction } from './nitro/prefer-nitro-translate-fun
 import { correctTranslationUsage } from './nitro/correct-translation-usage'
 import { preferNitroTextNodeComponent } from './orbit/prefer-nitro-textnode-component'
 import { allowedTagNamesInTranslationComponents } from './nitro/allowed-tag-names-in-translation-components'
+import { preferNitroButtonComponent } from './orbit/prefer-nitro-button-component'
 
 export const rules = {
   'orbit-text-component-name': orbitTextComponentName,
   'prefer-nitro-text-component': preferNitroTextComponent,
   'prefer-nitro-textnode-component': preferNitroTextNodeComponent,
   'prefer-nitro-translate-component': preferNitroTranslateComponent,
+  'prefer-nitro-button-component': preferNitroButtonComponent,
   'no-tkey-nitro-translate-component': noTkeyNitroTranslateComponent,
   'nitro-use-string-for-non-dynamic-translation-keys': nitroUseStringForNonDynamicTranslationKeys,
   'selector-naming': selectorNaming,
